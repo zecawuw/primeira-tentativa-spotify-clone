@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/831/831290.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Minhas Musiacas</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="novas-musicas">
+            <h1 id="novas-musicas-h1">sua musica entrou :)</h1>
+            <input id="musica-nova1" type="text" placeholder="Nome da musica">
+            <input id="musica-nova2" type="text" placeholder="Nome do cantor">
+            <input id="musica-nova3" type="url" placeholder="insira sua nova musica">
+            <button id="inserirNovaMusica" onclick="inserirNovaMusica()">colocar</button>
+        </div><!--novas-musicas-->
+
+        <div id="lista-musica">
+            <audio id="musica">
+                <source src="MUSICAS/Sidoka - n me sinto mal mais.mp3" type="audio/ogg">
+                <source src="MUSICAS/Sidoka - n me sinto mal mais.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+            <audio id="musica1">
+                <source src="MUSICAS/K a m a i t a c h i - A história de Jhonny (Prod.MarcusMaia)_160k.mp3" type="audio/ogg">
+                <source src="MUSICAS/K a m a i t a c h i - A história de Jhonny (Prod.MarcusMaia)_160k.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div><!--lista-musica-->
+
+        <div id="barra-play">
+            <img id="botao-voltar" src="/ICONS/outline_arrow_left_white_24dp.png" alt="botão voltar">
+            <img  onclick="play()" id="botao-play" src="/ICONS/outline_play_circle_outline_white_24dp.png" alt="botão voltar">
+            <img  onclick="pause()" id="botao-pause" src="/ICONS/outline_pause_circle_white_24dp.png" alt="botão voltar">
+            <img id="botao-avancar" src="/ICONS/outline_arrow_right_white_24dp.png" alt="botão voltar">
+            <!-- <div id="tempo-musica"></div> -->
+        </div><!--barra-play-->
+
+        <div class="capas-musicas">
+            <img id="capa-sidoka-nao-me-sinto-mal-mais" src="/IMG/sidoka-nao-me-sinto-mal-mais.jpg" alt="">
+            <img id="a-historia-de-johnny" src="/IMG/a-historia-de-johnny.jpg" alt="">
+
+        </div><!--copas-musicas-->
+
+        <div id="musicas">
+            <ul>
+                <li id="play-li" onclick="play2()">
+                    <img id="icon-music1" src="/ICONS/outline_music_note_white_24dp.png" alt="icon musica"><img id="icon-music2" src="/ICONS/outline_play_arrow_white_24dp.png" alt="icon musica">
+                    <h3 id="musicas-h3">n me sinto mal mais</h3>
+                    <p id="musicas-p">Sidoka</p>
+                </li>
+                <li id="play-li1" onclick="play3()">
+                    <img id="icon-music11" src="/ICONS/outline_music_note_white_24dp.png" alt="icon musica"><img id="icon-music22" src="/ICONS/outline_play_arrow_white_24dp.png" alt="icon musica">
+                    <h3 id="musicas-h3">a historia de johnny</h3>
+                    <p id="musicas-p">kamaitachi</p>
+                </li>
+            </ul>
+        </div><!--musicas-->
+
+    </div><!--container-->
+      
+    
+    <script src="/jv/script.js"></script>
+</body>
+</html>

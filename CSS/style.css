@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #271D1E;
+    background: -moz-linear-gradient(top, #271D1E 0%, #161012 58%, #070606 100%);
+    background: -webkit-linear-gradient(top, #271D1E 0%, #161012 58%, #070606 100%);
+    background: linear-gradient(to bottom, #271D1E 0%, #161012 58%, #070606 100%);
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 1080px;
+}
+
+.novas-musicas{
+    background-color: rgb(7, 6, 6, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 350px;
+}
+
+#novas-musicas-h1{
+    color: #57b55d;
+    font-size: 16px;
+    position: relative;
+    top: 27%;
+    align-self: center;
+    display: none;
+}
+
+#musica-nova1{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: 0;
+}
+
+#musica-nova2{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: 0;
+}
+
+#musica-nova3{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: 0;
+}
+
+#inserirNovaMusica{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #57b55d;
+    transition: 500ms;
+    cursor: pointer;
+    color: white;
+    border: 0;
+}
+
+#inserirNovaMusica:hover{
+    background-color: #36803b;
+}
+
+#lista-musica{
+    width: calc(100% - 10%);
+    height: 100%;
+}
+
+#barra-play{
+    background-color: #282828;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: calc(100% - 100px);
+    display: flex;
+}
+
+#botao-voltar{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    position: absolute;
+    top: calc(100% - 80px);
+    left: calc(100% - 60%);
+    cursor: pointer;
+}
+
+#botao-play{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    position: absolute;
+    top: calc(100% - 80px);
+    left: calc(100% - 50%);
+    cursor: pointer;
+}
+
+#botao-pause{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    position: absolute;
+    top: calc(100% - 80px);
+    left: calc(100% - 50%);
+    cursor: pointer;
+    display: none;
+}
+
+#botao-avancar{
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+    position: absolute;
+    top: calc(100% - 80px);
+    left: calc(100% - 40%);
+    cursor: pointer;
+}
+
+/* #tempo-musica{
+    width: calc(100% - 40%);
+    height: 5px;
+    background-color: white;
+    position: relative;
+    top: 30px;
+    margin: auto;
+} */
+
+#musicas{
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    margin-left: calc(100% - 50%);
+    margin-top: 40px;
+
+}
+
+#musicas ul{
+    color: white;
+}
+
+
+#musicas li{
+    cursor: pointer;
+}
+
+#musica h3, img{
+    width: 20px;
+}
+
+#musicas-h3{
+    margin-left: 20px;
+}
+
+#icon-music1{
+    position: relative;
+    top: 25px;
+}
+
+#musicas p{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #ccc;
+}
+
+#icon-music2{
+    display: none;
+}
+
+#icon-music11{
+    position: relative;
+    top: 25px;
+}
+
+#icon-music22{
+    display: none;
+}
+
+.capas-musicas{
+    width: 24%;
+    height: 400px;
+    position: absolute;
+    background-image: url(/IMG/zecaww.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 61px;
+    left: calc(100% - 77%);
+}
+
+#capa-sidoka-nao-me-sinto-mal-mais{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#a-historia-de-johnny{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
